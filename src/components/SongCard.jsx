@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import {PlayPause} from "./PlayPause"
-const SongCard = ({song}) => {  
-  const activeSong = "Test";
+import PlayPause from "./PlayPause"
+const SongCard = ({song , i , activeSong , data , isPlaying}) => {  
   
   const handlePauseClick = () => {    
 
@@ -19,6 +18,8 @@ const SongCard = ({song}) => {
         song={song}
         handlePause={handlePauseClick}
         handlePlay={handlePlayClick}
+        isPlaying={isPlaying}
+        activeSong={activeSong}
         />
       </div>
       <img src={song.images?.coverart} alt="song-img" />
