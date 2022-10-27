@@ -1,11 +1,12 @@
 import { useParams } from "react-router-dom";
-import { DetailsHeader } from "../components";
-import { useGetSongDetailsQuery } from "../redux/services/shazamCore";
+import { DetailsHeader, RelatedSongs } from "../components";
+import { useGetSongDetailsQuery, useGetSongRelatedQuery } from "../redux/services/shazamCore";
 
 const SongDetails = () => {
 
     const {songid} = useParams()
     const {data:songData , isFetching:isFetchingSongDetails} = useGetSongDetailsQuery(songid)
+    const{data , isFetching:isFetchingRelatedSongs , error} = useGetSongRelatedQuery(songid)
     console.log(songid);
     return (
         <div className="flex flex-col">
@@ -21,6 +22,7 @@ const SongDetails = () => {
                     )): <p className="text-gray-400 text-base my-1">Sorry, no lyrics found!</p>}
                 </div>
             </div>
+            <RelatedSongs/>
         </div>
         )
 };

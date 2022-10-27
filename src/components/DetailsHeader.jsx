@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import RelatedSongs from "./RelatedSongs";
 
 const DetailsHeader = ({artistId , artistData ,  songData }) => { 
   const artist = artistData?.artists[artistId]?.attributes;
@@ -25,6 +26,7 @@ const DetailsHeader = ({artistId , artistData ,  songData }) => {
 
         <div className="w-full sm:h-44 h-24"/>
       </div>
+
 );
 }
 export default DetailsHeader;
