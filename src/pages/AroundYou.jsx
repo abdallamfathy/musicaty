@@ -1,5 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const CountryTracks = () => <div>CountryTracks</div>;
+const AroundYou = () => {
+    const [country, setCountry] = useState("")
+    
+    return (
+    )
+};
 
-export default CountryTracks;
+export default AroundYou;
