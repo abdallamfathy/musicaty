@@ -17,7 +17,7 @@ const SongCard = ({song , i , activeSong , data , isPlaying}) => {
   return (
   <div className="bg-white/5 w-[250px] bg-opacity-80 backdrop-blur-2xl rounded-lg animate-slideup cursor-pointer p-4">
     <div className="relative h-56 group w-full ">
-      <div className={`absolute inset-0 justify-center items-center bg-opacity-50 group-hover:flex bg-black ${activeSong?.title === song.title ? 'flex bg-black bg-opacity-70' : 'hidden' }`}>
+      <div className={`absolute inset-0 justify-center items-center bg-opacity-50 group-hover:flex bg-black ${activeSong?.title === song?.title ? 'flex bg-black bg-opacity-70' : 'hidden' }`}>
         <PlayPause 
         song={song}
         handlePause={handlePauseClick}
