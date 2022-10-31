@@ -9,7 +9,6 @@ import { useGetSongsByCountryQuery } from '../redux/services/shazamCore';
 const AroundYou = () => {
     const [country, setCountry] = useState("EG")
     const [loading, setLoading] = useState(true)
-    console.log(country);
 useEffect( () => {
     axios.get(`https://geo.ipify.org/api/v2/country?apiKey=at_3aOMmk2s0W3yUVFKqNg91qr10q1Ce
     `).then((res)=> setCountry(res?.data?.location?.country)).catch((err)=> console.log(err)).finally(()=>setLoading(false))
