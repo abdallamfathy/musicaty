@@ -83,7 +83,7 @@ const TopPlay = () => {
         </div>
       </div>
       
-      // Top Artists
+      {/* // Top Artists */}
       <div className="w-full flex flex-col mt-8">
       <div className="flex flex-row justify-between items-center">
           <h2 className="text-white font-bold text-xl">
