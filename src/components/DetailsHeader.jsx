@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import RelatedSongs from "./RelatedSongs";
 
 const DetailsHeader = ({artistId , artistData ,  songData }) => { 
   const artist = artistData?.artists[artistId]?.attributes;

@@ -5,7 +5,6 @@ import { FreeMode } from "swiper";
 import {Swiper  , SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/free-mode';
-
 import { useGetTopChartsQuery } from "../redux/services/shazamCore";
 import PlayPause from "./PlayPause"
 import { playPause, setActiveSong } from "../redux/features/playerSlice";
