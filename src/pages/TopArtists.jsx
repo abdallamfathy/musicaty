@@ -6,7 +6,7 @@ const TopArtists = () => {
 
     const {data , isFetching , error} = useGetTopChartsQuery();
 
-    if(isFetching ) return <Loader title="Loading Top Charts"/>
+    if(isFetching ) return <Loader title="Loading Top Artists"/>
     if(error) return <Error/>
     return (
         <div className='flex flex-col'>
